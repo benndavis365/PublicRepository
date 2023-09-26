@@ -1,0 +1,17 @@
+favorite_languages = {
+  "betty" : "python",
+  "johnny" : "html",
+  "grace" : "javascript",
+  "betty lu" : "c",
+  "maple" : "ruby",
+}
+
+#for name in favorite_languages.keys():
+#  print(f"\nThank you {name.title()}, for taking the poll.")
+
+friends = ["maple", "betty lu", "ralph", "ronny"]
+
+
+  if name not in favorite_languages[name].title():
+    print(f"\n{name}, please take the poll.")
+ 

@@ -1,0 +1,17 @@
+def calculate_years_to_double(initial_investment, annual_interest_rate):
+    target_amount = initial_investment * 2
+    current_amount = initial_investment
+    years = 0
+
+    while current_amount < target_amount:
+        current_amount += current_amount * (annual_interest_rate / 100)
+        years += 1
+
+    return years
+
+# Taking input from the user
+initial_investment = float(input("Enter initial investment amount: "))
+annual_interest_rate = float(input("Enter annual interest rate (%): "))
+
+years_to_double = calculate_years_to_double(initial_investment, annual_interest_rate)
+print(f"It will take {years_to_double} years for the investment to double.")
